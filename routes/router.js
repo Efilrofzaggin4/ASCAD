@@ -7,6 +7,7 @@ const router = express.Router();
 ///ROUTERS COTE ADMIN
 import Admin from "../controllers/admin.js";
 
+import {AjoutDePrestationForm, AjoutDePrestationSubmit} from "../controllers/ajout_de_prestation.js";
 
 
 
@@ -14,12 +15,16 @@ import Admin from "../controllers/admin.js";
 
 
 
-//liste des routes
+//////////////////liste des routes/////////////////
 
 //ACCUEIL ADMIN
 
 router.get('/admin', Admin);
 
+//AJOUT DE PRESTATION
+
+router.get('/admin/ajout_de_prestation', AjoutDePrestationForm);
+router.post('/admin/ajout_de_prestation', AjoutDePrestationSubmit);
 
 
 
