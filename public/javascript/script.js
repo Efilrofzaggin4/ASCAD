@@ -1,3 +1,5 @@
+// mise en cache de l'utilisation de la font dyslexie pour changement de page
+
 document.addEventListener('DOMContentLoaded', () => {
     let dyslexie = localStorage.getItem('dyslexieState') === 'true';
     let dyslexieButton = document.getElementById('dyslexie');
