@@ -31,23 +31,23 @@ app.set('view options', { pretty: true });
 app.use(express.json()) 
 app.use(express.urlencoded({ extended: true }))
 
-app.use(function (req, res, next) {
-    res.locals.isAdmin = req.session.role === 'admin';
+// app.use(function (req, res, next) {
+//     res.locals.isAdmin = req.session.role === 'admin';
 
-    next();
-});
+//     next();
+// });
 
-const protectedRoutesRegex = /^\/admin(\/[a-zA-Z0-9]+)*$/;
+// const protectedRoutesRegex = /^\/admin(\/[a-zA-Z0-9]+)*$/;
 
-app.use(function (req, res, next) {
-    const route = parseurl(req).pathname;
+// app.use(function (req, res, next) {
+//     const route = parseurl(req).pathname;
 
-    if (protectedRoutesRegex.test(route) && req.session.role !== 'admin') {
-        res.redirect('/');
-    } else {
-        next();
-    }
-});
+//     if (protectedRoutesRegex.test(route) && req.session.role !== 'admin') {
+//         res.redirect('/');
+//     } else {
+//         next();
+//     }
+// });
 
 
 //appel du routeur
