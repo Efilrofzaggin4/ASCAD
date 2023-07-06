@@ -3,6 +3,9 @@ import express from "express";
 
 const router = express.Router();
 
+///////////////////appel des routers///////////////////////
+///ROUTERS COTE ADMIN
+import Admin from "../controllers/admin.js";
 
 
 
@@ -11,6 +14,11 @@ const router = express.Router();
 
 
 
+//liste des routes
+
+//ACCUEIL ADMIN
+
+router.get('/admin', Admin);
 
 
 
