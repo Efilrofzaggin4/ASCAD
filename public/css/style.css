@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Kalam";
+    src: url("/fonts/Kalam-Regular.ttf"), format("ttf");
+}
+
+@font-face {
+    font-family: "OpenDyslexic";
+    src: url("/fonts/OpenDyslexic-Regular.woff"), format("woff");
+};
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+    padding: 0;
+  }
+  
+  body {
+    font-size: 1.6rem;
+    margin: 0;
+    font-family: 'Kalam', cursive;
+    position: relative;
+  }
+
+
+  
+.dyslexie {
+    font-family: "OpenDyslexic", sans-serif;
+  }
