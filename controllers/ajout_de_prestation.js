@@ -26,4 +26,4 @@ export const AjoutDePrestationSubmit = (req, res) => {
       // Redirigez l'utilisateur vers la page d'inex des prestations coté admin
       res.redirect('/admin');
     });
-  };
+  };  
