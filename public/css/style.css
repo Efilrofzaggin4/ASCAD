@@ -77,3 +77,23 @@ header {
   color : white;
 
 }
+
+
+
+/***************************************
+*********** TABLETS MODE ***************
+***************************************/
+
+@media screen and (min-width: 600px){
+  
+  .nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+
+/* @media screen and (min-width : 1200px) {
+  
+} */
