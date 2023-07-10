@@ -1,0 +1,33 @@
+<h2>Gestion des prestations</h2>
+
+<table class="admin-table">
+	<thead>
+			<th>Titre</th>
+            <th>Description</th>
+            <th>Prix HT</th>
+            <th>Prix TTC</th>
+			<th>Categorie</th>
+	</thead>
+	<tbody>
+		<% for(let i = 0; i < prestations.length; i++) { %>
+			<tr data-id="<%=prestations[i].id%>">
+				<td>
+					<%=prestations[i].titre%>
+				</td>
+				<td><%=prestations[i].description.substring(0, 30)%> ...</td>
+                <td><%=prestations[i].prix_ht%> €</td>
+				<td><%=prestations[i].prix_ttc%> €</td>
+                <td><%=prestations[i].catégorie%></td>
+				<td>
+                    <a class="edit" href="/admin/prestation_admin/editer_prestation/<%=prestations[i].id%>">editer</a>
+                    <button class="js-remove-prestation-button" data-id="<%=prestations[i].id%>">supp</button>
+                </td>
+				
+			</tr>
+		<% } %>
+	</tbody>
+</table>
+
+<a class="add-prestation" href="/admin/prestation_admin/ajout_de_prestation">Ajouter une prestation</a>
+
+<script language="javascript" src="/js/index.js"></script>
