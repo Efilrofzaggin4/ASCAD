@@ -4,13 +4,13 @@
 
 
 @font-face {
-    font-family: "Kalam";
-    src: url("/fonts/Kalam-Regular.ttf"), format("ttf");
+    font-family : "Kalam";
+    src : url("/fonts/Kalam-Regular.ttf"), format("ttf");
 }
 
 @font-face {
-    font-family: "OpenDyslexic";
-    src: url("/fonts/OpenDyslexic-Regular.woff"), format("woff");
+    font-family : "OpenDyslexic";
+    src : url("/fonts/OpenDyslexic-Regular.woff"), format("woff");
 };
 
 
@@ -18,22 +18,22 @@
 ********************** STYLE GENERAL ****************************
 ****************************************************************/
 * {
-    box-sizing: border-box;
+    box-sizing : border-box;
   }
   
   html {
-    font-size: 62.5%;
-    padding: 0;
+    font-size : 62.5%;
+    padding : 0;
   }
   
   body {
-    font-size: 1.6rem;
-    margin: 0;
-    font-family: 'Kalam', cursive;
-    position: relative;
+    font-size : 1.6rem;
+    margin : 0;
+    font-family : 'Kalam', cursive;
+    position : relative;
     /* display: flex; */
-    justify-content: center;
-    align-items: center;
+    justify-content : center;
+    align-items : center;
   }
 
 
@@ -41,7 +41,7 @@
 ******************* AFFICHAGE DYSLEXIE****************************
 *****************************************************************/
 .dyslexie {
-    font-family: "OpenDyslexic", sans-serif;
+    font-family : "OpenDyslexic", sans-serif;
   }
 
 /*****************************************************************
@@ -49,31 +49,31 @@
 *****************************************************************/
 
 header {
-    background: linear-gradient(to bottom, rgba(136,198,254, 1), rgba(89,173,251, 0.2 ));
+    background : linear-gradient(to bottom, rgba(136,198,254, 1), rgba(89,173,251, 0.2 ));
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
 }
 
 
 .nav {
-  background-color : rgb(0,136,152);
-  width: 100%;
+  background-color : rgba(0, 136, 152, 0.8);
+  width : 100%;
 
 }
 
 .nav ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  padding: 0%;
+  display : flex;
+  flex-direction : column;
+  justify-content : center;
+  align-items : center;
+  list-style : none;
+  padding : 0%;
 }
 
 .nav ul li a{
-  text-decoration: none;
+  text-decoration : none;
   color : white;
 
 }
